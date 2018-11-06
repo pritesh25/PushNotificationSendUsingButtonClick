@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyPushNotification</string>
+    <string name="channel_name">channel name</string>
+    <string name="channel_description">channel desc</string>
+    <string name="read">mark as read</string>
+    <string name="reply">Reply</string>
+    <string name="label">label</string>
+    <string name="reply_label">reply label</string>
+</resources>
