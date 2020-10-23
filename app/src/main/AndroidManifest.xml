@@ -2,8 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.pritesh.mypushnotification">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- added for uri expos e permission -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -20,7 +21,7 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/provider_paths"/>
+                android:resource="@xml/provider_paths" />
         </provider>
 
         <activity android:name=".MainActivity">
@@ -32,12 +33,12 @@
         </activity>
 
         <receiver android:name=".MyBroadcastReceiver">
-            <intent-filter >
-                <action android:name="MyBroadCast"/>
+            <intent-filter>
+                <action android:name="MyBroadCast" />
             </intent-filter>
         </receiver>
 
-        <activity android:name=".MessageActivity"/>
+        <activity android:name=".MessageActivity" />
 
     </application>
 
